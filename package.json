@@ -4,8 +4,10 @@
   "description": "Octopus data source plugin for Grafana",
   "main": "dist/module.js",
   "scripts": {
-    "build": "echo \"Warning: no build specified\" && exit 0",
-    "test": "echo \"Warning: no test specified\" && exit 0"
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/yesoreyeram/grafana-octopus-datasource/issues"
   },
-  "homepage": "https://github.com/yesoreyeram/grafana-octopus-datasource#readme"
+  "homepage": "https://github.com/yesoreyeram/grafana-octopus-datasource#readme",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "@grafana/data": "6.6.1",
+    "@grafana/runtime": "6.6.1",
+    "@grafana/toolkit": "6.5.3",
+    "@grafana/ui": "6.6.1",
+    "@types/grafana": "github:CorpGlory/types-grafana.git",
+    "@types/lodash": "^4.14.149"
+  }
 }
