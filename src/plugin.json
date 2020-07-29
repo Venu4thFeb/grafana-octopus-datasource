@@ -30,5 +30,21 @@
     "grafanaVersion": "5.2.x",
     "plugins": []
   },
-  "routes": []
+  "routes": [
+    {
+      "path": "octopus",
+      "method": "*",
+      "url": "{{ .JsonData.octopusURL }}",
+      "headers": [
+        {
+          "name": "Accept",
+          "content": "application/json"
+        },
+        {
+          "name": "X-Octopus-ApiKey",
+          "content": "{{.SecureJsonData.ApiKey}}"
+        }
+      ]
+    }
+  ]
 }
