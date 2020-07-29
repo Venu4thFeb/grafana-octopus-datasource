@@ -1,0 +1,25 @@
+{
+  "name": "grafana-octopus-datasource",
+  "version": "0.0.1",
+  "description": "Octopus data source plugin for Grafana",
+  "main": "dist/module.js",
+  "scripts": {
+    "build": "echo \"Warning: no build specified\" && exit 0",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesoreyeram/grafana-octopus-datasource.git"
+  },
+  "keywords": [
+    "grafana",
+    "octopus",
+    "devops"
+  ],
+  "author": "Sriramajeyam Sugumaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yesoreyeram/grafana-octopus-datasource/issues"
+  },
+  "homepage": "https://github.com/yesoreyeram/grafana-octopus-datasource#readme"
+}
