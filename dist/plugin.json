@@ -1,0 +1,50 @@
+{
+  "name": "Octopus",
+  "id": "yesoreyeram-grafana-octopus-datasource",
+  "type": "datasource",
+  "category": "devops",
+  "metrics": true,
+  "annotations": true,
+  "info": {
+    "version": "0.0.1",
+    "description": "Grafana Octopus DataSource",
+    "author": {
+      "name": "Sriramajeyam Sugumaran",
+      "url": "https://www.google.com/search?q=Sriramajeyam+Sugumaran"
+    },
+    "logos": {
+      "small": "img/yesoreyeram-grafana-octopus-datasource-logo.jpg",
+      "large": "img/yesoreyeram-grafana-octopus-datasource-logo.jpg"
+    },
+    "keywords": [
+      "octopus"
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/yesoreyeram/grafana-octopus-datasource"
+      }
+    ]
+  },
+  "dependencies": {
+    "grafanaVersion": "5.2.x",
+    "plugins": []
+  },
+  "routes": [
+    {
+      "path": "octopus",
+      "method": "*",
+      "url": "{{ .JsonData.octopusURL }}",
+      "headers": [
+        {
+          "name": "Accept",
+          "content": "application/json"
+        },
+        {
+          "name": "X-Octopus-ApiKey",
+          "content": "{{.SecureJsonData.ApiKey}}"
+        }
+      ]
+    }
+  ]
+}
