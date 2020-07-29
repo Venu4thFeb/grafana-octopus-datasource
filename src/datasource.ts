@@ -10,15 +10,20 @@ export class Datasource extends DataSourceApi {
   }
   testDatasource() {
     return new Promise(async (resolve: any, reject: any) => {
-      this.octopusDataSource.query({
-        targets: [{
-          hide: false
-        }]
-      }).then((res: any) => {
-        resolve({ message: 'Successfully Connected to Octopus', status: 'success' });
-      }).catch((ex: any) => {
-        reject({ message: 'Failed to connected Octopus', status: 'error' });
-      })
+      this.octopusDataSource
+        .query({
+          targets: [
+            {
+              hide: false,
+            },
+          ],
+        })
+        .then((res: any) => {
+          resolve({ message: 'Successfully Connected to Octopus', status: 'success' });
+        })
+        .catch((ex: any) => {
+          reject({ message: 'Failed to connected Octopus', status: 'error' });
+        });
     });
   }
   query(options: any) {

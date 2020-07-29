@@ -7,8 +7,8 @@ export interface OctopusDataSourceOptions extends DataSourceJsonData {
 export interface OctopusDatasourceSecureJsonData {
   ApiKey?: string;
 }
-interface Props extends DataSourcePluginOptionsEditorProps<OctopusDataSourceOptions> { }
-interface State { }
+interface Props extends DataSourcePluginOptionsEditorProps<OctopusDataSourceOptions> {}
+interface State {}
 
 export class OctopusConfigEditor extends PureComponent<Props, State> {
   onOctopusURLChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -73,13 +73,8 @@ export class OctopusConfigEditor extends PureComponent<Props, State> {
                 </span>
               </>
             ) : (
-                <input
-                  type="password"
-                  value={secureJsonData.ApiKey || ''}
-                  className="gf-form-input width-24"
-                  onChange={this.onAPIKeyChange}
-                ></input>
-              )}
+              <input type="password" value={secureJsonData.ApiKey || ''} className="gf-form-input width-24" onChange={this.onAPIKeyChange}></input>
+            )}
           </div>
         </div>
       </div>
