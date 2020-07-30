@@ -26,6 +26,7 @@ jobs:
         yarn test;
         yarn dev;
         echo $(date) > dist/LAST_UPDATED;
+        cp CHANGELOG.md dist/CHANGELOG.md;
         git config --global user.email "actions@github.com";
         git config --global user.name "Github Actions";
         git add --force dist/

@@ -1,12 +1,13 @@
 {
   "name": "Octopus",
-  "id": "yesoreyeram-grafana-octopus-datasource",
+  "id": "yesoreyeram-octopus-datasource",
   "type": "datasource",
-  "category": "devops",
+  "category": "tracing",
   "metrics": true,
   "annotations": true,
   "info": {
-    "version": "0.0.1",
+    "version": "%VERSION%",
+    "updated": "%TODAY%",
     "description": "Grafana Octopus DataSource",
     "author": {
       "name": "Sriramajeyam Sugumaran",
