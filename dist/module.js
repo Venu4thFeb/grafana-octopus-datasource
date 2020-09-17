@@ -453,7 +453,7 @@ function (_super) {
       className: "gf-form"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
       className: "gf-form-label width-10",
-      title: "Tenant ID"
+      title: "Octopus URL"
     }, "Octopus URL"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
       className: "gf-form-input width-24",
       type: "text",

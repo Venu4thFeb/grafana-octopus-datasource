@@ -7,7 +7,7 @@
   "annotations": true,
   "info": {
     "version": "0.0.1",
-    "updated": "2020-07-30",
+    "updated": "2020-09-17",
     "description": "Grafana Octopus DataSource",
     "author": {
       "name": "Sriramajeyam Sugumaran",
