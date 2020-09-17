@@ -49,7 +49,7 @@ export class OctopusConfigEditor extends PureComponent<Props, State> {
     return (
       <div className="gf-form-group">
         <div className="gf-form">
-          <label className="gf-form-label width-10" title="Tenant ID">
+          <label className="gf-form-label width-10" title="Octopus URL">
             Octopus URL
           </label>
           <input
